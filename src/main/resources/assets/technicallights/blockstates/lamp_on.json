@@ -1,0 +1,41 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "solid": "technicallights:blocks/solid",
+      "halo": "technicallights:blocks/halo",
+      "particle": "technicallights:blocks/solid"
+    },
+    "model": "forge:multi-layer",
+    "custom": {
+      "base": "technicallights:lamp_on#solid",
+      "Solid": "technicallights:lamp_on#solid",
+      "Translucent": "technicallights:lamp_on#halo"
+    },
+    "uvlock": true
+  },
+  "variants": {
+    "color":
+    {
+      "white": {},
+      "orange": {},
+      "magenta": {},
+      "light_blue": {},
+      "yellow": {},
+      "lime": {},
+      "pink": {},
+      "gray": {},
+      "silver": {},
+      "cyan": {},
+      "purple": {},
+      "blue": {},
+      "brown": {},
+      "green": {},
+      "red": {},
+      "black": {}
+    },
+    "inventory": [{ "model": "technicallights:lamp_inventory" }],
+    "solid": [{ "model": "technicallights:lamp_solid" }],
+    "halo": [{ "model": "technicallights:lamp_halo" }]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "solid": "technicallights:blocks/solid_off",
+      "particle": "technicallights:blocks/solid_off"
+    },
+    "model": "technicallights:lamp_solid",
+    "uvlock": true
+  },
+  "variants": {
+    "color":
+    {
+      "white": {},
+      "orange": {},
+      "magenta": {},
+      "light_blue": {},
+      "yellow": {},
+      "lime": {},
+      "pink": {},
+      "gray": {},
+      "silver": {},
+      "cyan": {},
+      "purple": {},
+      "blue": {},
+      "brown": {},
+      "green": {},
+      "red": {},
+      "black": {}
+    },
+    "inventory": [{ }]
+  }
+}

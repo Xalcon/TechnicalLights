@@ -1,0 +1,18 @@
+{
+  "parent": "block/block",
+  "elements": [
+    {
+      "from": [ -0.75, -0.75, -0.75 ],
+      "to": [ 16.75, 16.75, 16.75 ],
+      "shade": false,
+      "faces": {
+        "down":  { "texture": "#halo", "uv": [0, 0, 16, 16], "tintindex": 1 },
+        "up":    { "texture": "#halo", "uv": [0, 0, 16, 16], "tintindex": 1 },
+        "north": { "texture": "#halo", "uv": [0, 0, 16, 16], "tintindex": 1 },
+        "south": { "texture": "#halo", "uv": [0, 0, 16, 16], "tintindex": 1 },
+        "west":  { "texture": "#halo", "uv": [0, 0, 16, 16], "tintindex": 1 },
+        "east":  { "texture": "#halo", "uv": [0, 0, 16, 16], "tintindex": 1 }
+      }
+    }
+  ]
+}
