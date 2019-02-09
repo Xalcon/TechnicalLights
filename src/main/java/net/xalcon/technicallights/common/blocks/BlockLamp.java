@@ -36,12 +36,26 @@ public class BlockLamp extends Block
         this.setRegistryName(TechnicalLights.MODID, "lamp" + (isOn ? "_on" : "_off"));
         this.setTranslationKey(this.getRegistryName().toString());
         this.setCreativeTab(CreativeTabTechnicalLights.INSTANCE);
+        this.setHardness(0.3f);
 
         if(isOn)
         {
             this.setLightLevel(1.0f);
             this.setLightOpacity(0);
         }
+    }
+
+    /**
+     * Checks if the specified tool type is efficient on this block,
+     * meaning that it digs at full speed.
+     *
+     * @param type
+     * @param state
+     */
+    @Override
+    public boolean isToolEffective(String type, IBlockState state)
+    {
+        return super.isToolEffective(type, state);
     }
 
     @Override
@@ -148,6 +162,18 @@ public class BlockLamp extends Block
     public Item getItemDropped(IBlockState state, Random rand, int fortune)
     {
         return Item.getItemFromBlock(ModBlocks.lamp_on);
+    }
+
+    /**
+     * Gets the metadata of the item this Block can drop. This method is called when the block gets destroyed. It
+     * returns the metadata of the dropped item based on the old metadata of the block.
+     *
+     * @param state
+     */
+    @Override
+    public int damageDropped(IBlockState state)
+    {
+        return this.getMetaFromState(state);
     }
 
     @Override
